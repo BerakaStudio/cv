@@ -179,6 +179,15 @@ ul.experience li {
 ul.experience li:nth-child(2n) {
   background: rgba(0, 0, 0, 0.0);
 }
+ul.experience li p img {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  max-width: 24px;
+  margin: 0 4px 0 10px;
+  position: relative;
+  top: 4px;
+}
 ul.experience li ul {
   margin: 0;
   padding: 0;

@@ -1,4 +1,4 @@
-# Live resume concept
+# CV jloboss NTT DATA
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/aja9104/pen/nzaZwW](https://codepen.io/aja9104/pen/nzaZwW).
+CV basado en un pen original de CodePen.io. Original: [https://codepen.io/aja9104/pen/nzaZwW](https://codepen.io/aja9104/pen/nzaZwW).
 

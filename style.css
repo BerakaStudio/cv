@@ -177,7 +177,7 @@ ul.experience li {
   margin: 0 0 16px 0;
 }
 ul.experience li:nth-child(2n) {
-  background: rgba(0, 0, 0, 0.064);
+  background: rgba(0, 0, 0, 0.0);
 }
 ul.experience li ul {
   margin: 0;

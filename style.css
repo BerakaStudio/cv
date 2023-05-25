@@ -70,7 +70,7 @@ h1
 
 .me-img
 {
-	background:url(https://f4.bcbits.com/img/0031430061_20.jpg) no-repeat center center ;
+	background:url(../cv/img/avatar.jpg) no-repeat center center ;
 	background-size:100%;
   background-position:0px;
 	border-radius:100%;
@@ -86,7 +86,7 @@ h1
 
 .name-hero h1
 {
-	font-family:Open Sans, sans-serif;
+	font-family:Roboto, sans-serif;
 	font-size:1.5em;
 	text-align:center;
 }
@@ -113,6 +113,32 @@ h1
 	width:85%;
 }
 
+.name-hero .name-text ul.socials {
+	list-style: none;
+    margin: 1em 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    width: 100%;
+    justify-content: center;
+}
+.name-hero .name-text ul.socials li {
+	width: auto;
+}
+.name-hero .name-text ul.socials li a {
+	color: rgba(0,0,0,.75);
+    display: block;
+    height: 22px;
+}
+.name-hero .name-text ul.socials li a:hover {
+	opacity: .8;
+}
+.name-hero .name-text ul.socials li a svg {
+	width: 100%;
+	height: 100%;
+}
+
 .inner
 {
 	margin:0 auto;
@@ -123,11 +149,12 @@ h1
 .inner h1
 {
 	font-size:1.75em;
+	font-family: Roboto, serif;
 }
 
 .inner p
 {
-	color:rgba(0,0,0,.6);
+	color:rgba(0,0,0,.65);
 }
 
 .inner p em
@@ -170,7 +197,7 @@ ul.experience {
 }
 ul.experience li {
   width: 100%;
-  border: 1px solid #d9d9d9;
+  border: 1px solid rgba(0,0,0,.05);
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.024);
   padding: 0 20px;
@@ -179,33 +206,60 @@ ul.experience li {
 ul.experience li:nth-child(2n) {
   background: rgba(0, 0, 0, 0.0);
 }
-ul.experience li p img {
-  width: 24px;
-  height: 24px;
-  min-width: 24px;
-  max-width: 24px;
-  margin: 0 4px 0 10px;
-  position: relative;
-  top: 4px;
+ul.experience li div {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+ul.experience li div h4 {
+	color: rgba(0,0,0,1);
+}
+ul.experience li div h4 em {
+	color: rgba(0,0,0,.6);
+}
+ul.experience li div img {
+	height: 20px;
+	max-width: 100px;
+	margin: 0 12px 0 12px;
+}
+ul.experience li div div {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	justify-content: space-between;
+	align-items: center;
+}
+ul.experience li div div img {
+	height: 20px;
+	max-width: 100px;
+	margin: 0 6px 0 6px;
 }
 ul.experience li ul {
   margin: 0;
   padding: 0;
   width: 100%;
   display: block;
+  list-style: disc;
 }
 ul.experience li ul li {
   width: 100%;
   border: none;
   background: transparent;
-  padding: 0 0 0 10px;
-  margin: 0;
+  padding: 0 0 0 0px;
+  margin: 0 0 0 1.2em;
 }
 ul.experience li ul li:first-of-type {
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 ul.experience li ul li:nth-child(2n) {
   background: transparent;
+}
+ul.experience li ul li::marker {
+	font-size: .75em;
 }
 
 @media screen and (max-width: 48em) {
@@ -240,9 +294,4 @@ ul.experience li ul li:nth-child(2n) {
 .handmade {
   text-align:right;
   margin-top:100px;
-}
-.handmade em {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 1.25em;
-  margin-left:5px;
 }

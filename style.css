@@ -219,6 +219,41 @@ ul.experience li {
 ul.experience li:nth-child(2n) {
   background: rgba(0, 0, 0, 0.0);
 }
+
+ul.experience li details {
+  width: 100%;
+  min-width: 100%;
+}
+
+ul.experience li summary {
+  cursor: pointer;
+}
+
+ul.experience li summary::marker {
+  background-color: grey;
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  color: red;
+}
+
+ul.experience li div.contenido-summary {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+ul.experience li div.contenido-summary p {
+  margin: 0;
+}
+
+ul.experience li div.contenido-summary p:last-of-type {
+  margin: 0 0 1em 0;
+}
+
 ul.experience li div {
 	display: flex;
 	flex-direction: row;
@@ -340,7 +375,7 @@ ul.experience li ul li::marker {
 		margin: 0;
 	}
 }
-	
+
 
 ::-webkit-scrollbar {
 	width: 10px;

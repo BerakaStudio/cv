@@ -157,6 +157,12 @@ h1
 	color:rgba(0,0,0,.65);
 }
 
+section.idiomas p em {
+	margin-left: 10px;
+    border-left: 2px solid rgba(0,0,0,0.25);
+    padding-left: 10px;
+}
+
 .inner p em
 {
 	color:rgba(0,0,0,1);

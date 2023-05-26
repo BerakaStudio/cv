@@ -246,7 +246,7 @@ ul {
 }
 
 .datos-it p.black {
-	width: 33.33%;
+	width: 25%;
 	text-align: center;
 	flex-flow: column-reverse;
 	display: flex;
@@ -264,7 +264,7 @@ ul {
 	border: 1px solid rgb(149 184 229 / 60%);
 	line-height: 1em;
 	padding: 10px;
-	margin: 0 44px 10px;
+	margin: 0 6px 10px;
 	background-color: rgb(237 244 255 / 85%);
 	font-weight: bold;
 	font-family: 'Roboto';
@@ -575,7 +575,7 @@ ul.experience li ul li::marker {
 	}
 
 	.datos-it p.black i {
-		margin: 0 20px 10px;
+		margin: 0 8px 10px;
 	}
 }
 

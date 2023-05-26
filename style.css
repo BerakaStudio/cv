@@ -46,7 +46,7 @@ h1 {
 
 .right {
 	height: 100vh;
-	width: 75%;
+	width: 66.66%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;

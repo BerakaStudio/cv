@@ -37,6 +37,7 @@ h1 {
 
 .left {
 	background-color: rgba(0, 0, 0, .025);
+	box-shadow: -50px 0 50px 50px rgba(0,0,0,0.1);
 	border-right: 1px solid rgba(0, 0, 0, .05);
 	height: 100%;
 	margin: 0;
@@ -497,6 +498,8 @@ ul.experience li ul li::marker {
 		height: auto;
 		width: 100%;
 		display: flex;
+		backdrop-filter: blur(40px) opacity(1) saturate(2);
+    	box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.1);
 	}
 
 	.left .name-hero {

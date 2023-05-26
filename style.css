@@ -18,11 +18,6 @@ body
 	text-rendering:optimizeLegibility;
 }
 
-.skill-set li:hover
-{
-	background:#db7934;
-}
-
 h1
 {
 	color:rgba(0,0,0,.75);
@@ -107,10 +102,10 @@ h1
 	text-align:center;
 }
 
-.name-hero .name-text
-{
-	margin:0 auto;
-	width:85%;
+.name-hero .name-text {
+	width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .name-hero .name-text ul.socials {
@@ -189,8 +184,7 @@ ul
     padding: 0;
 }
 
-.skill-set li
-{
+.skill-set li {
 	background:rgba(0,0,0,.75);
 	border-radius:5px;
 	color:#FFF;
@@ -199,6 +193,66 @@ ul
 	margin:15px 15px 0 0;
 	padding:10px;
 	text-align:justify;
+}
+.skill-set li:hover {
+	background:#db7934;
+}
+.skill-set.it li {
+	background:rgba(47, 51, 114, 0.75);
+}
+.skill-set.it li:hover {
+	background:rgba(88, 92, 158, 0.75);
+}
+.skill-set.ds li {
+	background:rgba(9, 104, 59, 0.75);
+}
+.skill-set.ds li:hover {
+	background:rgba(24, 173, 103, 0.75);
+}
+.skill-set.sc li {
+	background:rgba(170, 111, 0, 0.75);
+}
+.skill-set.sc li:hover {
+	background:rgba(224, 165, 54, 0.75);
+}
+.skill-set.pp li {
+	background:rgba(88, 31, 141, 0.75);
+}
+.skill-set.pp li:hover {
+	background:rgba(142, 88, 192, 0.75);
+}
+
+.datos-it {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+	width: 100%;
+	padding: 0;
+}
+.datos-it p.black {
+	width: 33.33%;
+    text-align: center;
+    flex-flow: column-reverse;
+    display: flex;
+	margin: 0;
+}
+.datos-it p.black b {
+	width: 100%;
+    display: block;
+	font-weight: normal;
+}
+.datos-it p.black i {
+	border-radius: 6px;
+	border: 1px solid rgb(149 184 229 / 60%);
+    line-height: 1em;
+    padding: 10px;
+    margin: 0 44px 10px;
+    background-color: rgb(237 244 255 / 85%);
+    font-weight: bold;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 18px;
 }
 
 ul.experience {
@@ -210,7 +264,7 @@ ul.experience {
 }
 ul.experience li {
   width: 100%;
-  border: 1px solid rgba(0,0,0,.05);
+  border: 1px solid rgba(157, 157, 157, 0.722);
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.024);
 /*   padding: 0 20px; */
@@ -229,10 +283,7 @@ ul.experience li:nth-child(2n) {
 }
 
 .item-container {
-	border-bottom: 1px solid rgba(0,0,0,.05);
-}
-.item-container:last-child {
-    border-bottom: none;
+	border-bottom: 1px solid rgba(157, 157, 157, 0.722);
 }
 .item {
 	padding: 0 20px;
@@ -254,8 +305,8 @@ ul.experience li:nth-child(2n) {
     height: 24px;
     background: white;
     border-radius: 50px;
-    border: 1px solid grey;
-	color: grey;
+    border: 1px solid rgba(157, 157, 157, 0.722);
+    color: rgba(157, 157, 157, 0.722);
     line-height: 24px;
     font-size: 24px;
     text-align: center;
@@ -265,7 +316,7 @@ ul.experience li:nth-child(2n) {
 }  
 .item__content {
 	display: none;
-	border-top: 1px solid rgba(0,0,0,.05);
+	border-top: 1px solid rgba(157, 157, 157, 0.722);
 	transition: all .35s;
 }  
 .check:checked ~ .item__title:after {
@@ -450,8 +501,24 @@ ul.experience li ul li::marker {
 	.right .inner section:first-of-type {
 		margin: 0;
 	}
+	ul.experience li div ul {
+		min-width: 95.5%;
+	}
+	.datos-it {
+		align-items: flex-start;
+	}
+	.datos-it p.black i {
+		margin: 0 16px 10px;
+	}
 }
-
+@media (min-width: 1024px) and (max-width: 1301px) {
+	.datos-it {
+		align-items: baseline;
+	}
+	.datos-it p.black i {
+		margin: 0 20px 10px;
+	}
+}	
 
 ::-webkit-scrollbar {
 	width: 10px;
@@ -469,39 +536,4 @@ ul.experience li ul li::marker {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: rgb(138, 138, 138);
-}
-
-
-@media screen and (max-width: 48em) {
-	.right,.left
-	{
-		float:none;
-    position:relative !important;
-		width:100%;
-    min-height:500px;
-	}
-  .handmade {
-  text-align:center !important;
-  margin-top:0px !important;
-}
-
-@media screen and (max-width: 75em) {
-    body
-{ font-size:16px;}
-}
-
-@media screen and (max-width: 60em) {
-    body
-{ font-size:14px;}
-}
-.clearfix:after {
-   content: " "; /* Older browser do not support empty content */
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
-}
-.handmade {
-  text-align:right;
-  margin-top:100px;
 }

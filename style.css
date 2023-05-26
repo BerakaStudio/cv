@@ -213,84 +213,160 @@ ul.experience li {
   border: 1px solid rgba(0,0,0,.05);
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.024);
-  padding: 0 20px;
+/*   padding: 0 20px; */
   margin: 0 0 16px 0;
 }
 ul.experience li:nth-child(2n) {
   background: rgba(0, 0, 0, 0.0);
 }
 
-ul.experience li details {
-  width: 100%;
-  min-width: 100%;
+.items-list {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 2em;
 }
 
-ul.experience li summary {
-  cursor: pointer;
+.item-container {
+	border-bottom: 1px solid rgba(0,0,0,.05);
 }
-
-ul.experience li summary::marker {
-  background-color: grey;
-  border: 1px solid black;
-  border-radius: 50px;
-  width: 20px;
-  height: 20px;
-  color: red;
+.item-container:last-child {
+    border-bottom: none;
 }
-
-ul.experience li div.contenido-summary {
-  margin: 0;
-  padding: 0;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1em;
+.item {
+	padding: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
-ul.experience li div.contenido-summary p {
-  margin: 0;
+.item__title {
+	display: flex;
+	position: relative;
+	cursor: pointer;
+	user-select: none;
 }
-
-ul.experience li div.contenido-summary p:last-of-type {
-  margin: 0 0 1em 0;
+.item__title:after {
+	display: block;
+    content: "+";
+    font-weight: normal;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 50px;
+    border: 1px solid grey;
+	color: grey;
+    line-height: 24px;
+    font-size: 24px;
+    text-align: center;
+}
+.check {
+	display: none;
+}  
+.item__content {
+	display: none;
+	border-top: 1px solid rgba(0,0,0,.05);
+	transition: all .35s;
+}  
+.check:checked ~ .item__title:after {
+	content: '–';
+	opacity: 1;
+}
+.check:checked ~ .item__content {
+	display: block;
+}
+.item__content ul.listado {
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    list-style: disc;
+}
+.item__content ul.listado li {
+	width: 100%;
+    border: none;
+    background: transparent;
+    padding: 0 0 0 0px;
+    margin: 0 0 0 1.2em;
+}
+.item__content ul.listado li:nth-of-type(2) {
+	width: 100%;
+    border: none;
+    background: transparent;
+    padding: 0 0 0 0px;
+    margin: 0 0 0 1.2em;
+    display: list-item;
+}
+.item__content ul.listado li::marker {
+    font-size: .75em;
 }
 
 ul.experience li div {
-	display: flex;
+/* 	display: flex; */
 	flex-direction: row;
 	width: 100%;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 }
-ul.experience li div h4 {
-	color: rgba(0,0,0,1);
+ul.experience li div ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 96.5%;
 }
-ul.experience li div h4 em {
-	color: rgba(0,0,0,.6);
+ul.experience li div ul li {
+	width: 50%;
+}
+ul.experience li div ul li:first-of-type {
+	width: 100%;
+}
+ul.experience li div ul li:nth-of-type(2) {
+	width: 50%;
+    margin: 0 12px 0 0;
+    display: flex;
+    justify-content: flex-end;
+	align-items: center;
+}
+ul.experience li div ul li h4 {
+	width: 100%;
+    color: rgba(0,0,0,1);
+    margin-bottom: 6px;
+    margin-top: 24px;
+    margin-right: 0;
+    margin-left: 0;
+}
+ul.experience li div ul li h5 {
+	width: 100%;
+    display: block;
+    color: rgba(0,0,0,.6);
+    font-size: 18px;
+	margin: 0 0 24px 0;
+}
+ul.experience li div ul li h5 em {
 	margin-left: 10px;
     border-left: 2px solid rgba(0,0,0,0.25);
     padding-left: 10px;
 }
-ul.experience li div img {
-	height: 20px;
-	max-width: 100px;
-	margin: 0 0 0 12px;
-}
-ul.experience li div div {
-	display: flex;
-	flex-direction: row;
-	width: auto;
-	justify-content: space-between;
-	align-items: center;
-}
-ul.experience li div div img {
-	height: 20px;
-	max-width: 100px;
-	margin: 0 12px 0 0;
-}
-ul.experience li div div img:last-of-type {
-	margin-right: 0;
+ul.experience li div ul li h5 em:first-of-type {
 	margin-left: 0;
+    padding-left: 0;
+    border-left: none;
 }
+ul.experience li div ul li img {
+	height: 32px;
+	max-width: 120px;
+	margin: 0;
+}
+ul.experience li div ul li img:last-of-type {
+	height: 24px;
+    max-width: 120px;
+    margin-left: 12px;
+}
+
 ul.experience li ul {
   margin: 0;
   padding: 0;

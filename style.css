@@ -108,8 +108,12 @@ input[type="checkbox"]:checked ~ #dark > .right .inner section ul.items-list > l
 	border-left: none;
 }
 
-input[type="checkbox"]:checked ~ #dark > .right .inner section ul.items-list > li.item-container .item .item__title h5 em{ 
+input[type="checkbox"]:checked ~ #dark > .right .inner section ul.items-list > li.item-container .item .item__title h5 em { 
 	border-left: 2px solid rgba(255, 255, 255, 0.4)
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section ul.items-list > li.item-container .item .item__title img { 
+	filter: grayscale(1) brightness(2.5);
 }
 
 input[type="checkbox"]:checked ~ #dark > .right .inner section ul.items-list > li.item-container .item .item__content p em {

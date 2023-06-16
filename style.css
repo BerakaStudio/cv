@@ -63,7 +63,7 @@ input[type="checkbox"]:checked ~ #dark > .left .name-hero .name-text ul.socials 
 }
 
 input[type="checkbox"]:checked ~ #dark > .right {
-	background: #404247;
+	background: #333439;
 }
 
 input[type="checkbox"]:checked ~ #dark > .right .inner h1 {

@@ -15,8 +15,9 @@
 <body>
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Roboto:300,400,500,700' rel='stylesheet'
     type='text/css'>
-
-  <div class="wrapper ">
+  <input type="checkbox" id="toggle">
+  <div class="wrapper" id="dark">
+    <label for="toggle" class="label-toggle">Dark/Light</label>  
     <div class="left">
       <div class="name-hero">
         <div class="me-img"></div>
@@ -84,6 +85,28 @@
         <section>
           <h1>Experiencia NTT DATA</h1>
           <ul class="experience items-list">
+            <li class="item-container">
+              <label class="item">
+                <input type="checkbox" class="check" name="acc">
+                <div class="item__title">
+                  <ul>
+                    <li>
+                      <h4>6 - 16 junio 2023</h4>
+                      <h5><em>Evolution Feedback</em><em>Prototipador (apoyo)</em></h5>
+                    </li>
+                    <li>
+                      <img src="img/nttdata.svg">
+                      <img src="img/evfe.png">
+                    </li>
+                  </ul>
+                </div>
+                <div class="item__content">
+                  <p>Prototipado de flujo de pantallas para una prueba de concepto interna.</p>
+                  <p><em>Tecnologías:</em> HTML, CSS, Angular, Material</p>
+                  <p><em>Metodologías:</em> Agile</p>
+                </div>
+              </label>
+            </li>
             <li class="item-container">
               <label class="item">
                 <input type="checkbox" class="check" name="acc">
@@ -500,5 +523,5 @@
   <!-- partial -->
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 </body>
-
 </html>
+<!-- &copy; 2023, Beraka Studio :) -->

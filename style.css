@@ -10,6 +10,254 @@ html {
 	font-size: 100%;
 }
 
+/******************* Dark mode ********************/
+input[type="checkbox"]:checked ~ #dark > h1 {
+	color: #ffffff;
+}
+
+input[type="checkbox"]:checked ~ #dark > h4 {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="checkbox"]:checked ~ #dark > h5 {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+input[type="checkbox"]:checked ~ #dark > h5 em {
+	border-left: 2px solid #ffffff;
+}
+
+input[type="checkbox"]:checked ~ #dark > p {
+	color: #ffffff;
+}
+
+input[type="checkbox"]:checked ~ #dark > p em {
+	color: #ffffff;
+}
+
+input[type="checkbox"]:checked ~ #dark > .name-hero h1 em {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="checkbox"]:checked ~ #dark > .left {
+	box-shadow: -50px 0 50px 50px rgb(0, 0, 0);
+	border-right: 1px solid rgba(0, 0, 0, 0.65);
+}
+
+input[type="checkbox"]:checked ~ #dark > .left .name-hero {
+	background: rgb(31, 35, 39);
+}
+input[type="checkbox"]:checked ~ #dark > .left .name-hero h1 {
+	color: rgba(255, 255, 255, 1);
+}
+input[type="checkbox"]:checked ~ #dark > .left .name-hero h1 em {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="checkbox"]:checked ~ #dark > .left .name-hero p {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+input[type="checkbox"]:checked ~ #dark > .left .name-hero .name-text ul.socials li a {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+input[type="checkbox"]:checked ~ #dark > .right {
+	background: #404247;
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner h1 {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner p {
+	color: rgba(255, 255, 255, 1);
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .datos-it p.black b {
+	color: #ffffff;
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .datos-it p.black i {
+	background-color: rgb(237 244 255 / 25%);
+	border-color: rgb(255 255 255 / 72%);
+	color: #ffffff;
+}
+
+input[type="checkbox"]:checked ~ #dark > ul.experience li {
+	background: rgba(0, 0, 0, 0.25);
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section ul.items-list > li.item-container {
+	background: rgba(0, 0, 0, 0.15) !important;
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section ul.items-list > li.item-container:nth-child(2n) {
+	background: rgba(255, 255, 255, 0.0) !important;
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section ul.items-list > li.item-container .item .item__title h4 {
+	color: #ffffff;
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section ul.items-list > li.item-container .item .item__title h5 {
+	color: #ffffff;
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section ul.items-list > li.item-container .item .item__title h5 em:first-of-type {
+	border-left: none;
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section ul.items-list > li.item-container .item .item__title h5 em{ 
+	border-left: 2px solid rgba(255, 255, 255, 0.4)
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section ul.items-list > li.item-container .item .item__content p em {
+	color: #ffffff;
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section ul.items-list > li.item-container .item .item__content ul.listado li::marker {
+	color: #ffffffb5;
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section ul.items-list > li.item-container .item .item__content ul.listado li em {
+	color: #ffffffb5;
+}
+
+input[type="checkbox"]:checked ~ #dark > ul.experience li:nth-child(2n) {
+	background: rgba(255, 255, 255, 0.0);
+}
+
+input[type="checkbox"]:checked ~ #dark > ul.experience li div ul li h4 {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="checkbox"]:checked ~ #dark > ul.experience li div ul li h5 {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+input[type="checkbox"]:checked ~ #dark > ul.experience li div ul li h5 em:first-of-type {
+	border-left: none !important;
+}
+
+input[type="checkbox"]:checked ~ #dark > ul.experience li div ul li h5 em {
+	border-left: 2px solid #ffffff;
+}
+
+input[type="checkbox"]:checked ~ #dark > .item__title:after {
+	background: transparent !important;
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section ul.skill-set.it li {
+	background: rgba(47, 51, 114, 0.6);
+	border: 1px solid rgba(88, 92, 158, 0.75);
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section ul.skill-set.it li:hover {
+	border: 1px solid rgba(88, 92, 158, 1);
+	background: rgba(47, 51, 114, 1);
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section  .skill-set.ds li {
+	background: rgba(15, 130, 76, 0.4);
+	border: 1px solid rgb(22 157 93 / 75%);
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section .skill-set.ds li:hover {
+	border: 1px solid rgb(15, 130, 76, 1);
+	background: rgba(9, 104, 59, 1);
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section .skill-set.sc li {
+	background: rgba(224, 165, 54, 0.35);
+    border: 1px solid rgba(224, 165, 54, 0.5);
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section .skill-set.sc li:hover {
+	background: rgba(224, 165, 54, 0.75);
+    border: 1px solid rgb(245 191 90);
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section .skill-set.pp li {
+	background: rgba(142, 88, 192, 0.4);
+    border: 1px solid rgba(142, 88, 192, 0.9);
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section .skill-set.pp li:hover {
+	background: rgba(88, 31, 141, 0.95);
+    border: 1px solid rgb(156 80 226);
+}
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section.idiomas p em {
+	color: #ffffffb5;
+	border-left: 2px solid #ffffff;
+} 
+
+input[type="checkbox"]:checked ~ #dark > .right .inner section p em {
+	color: #ffffffb5;
+}
+input[type="checkbox"]:checked ~ #dark > .label-toggle {
+	color: #ffffffb5;
+}
+
+/* Toggle Button */
+.label-toggle {
+	position: absolute;
+    top: 28px;
+    right: 52px;
+	font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#toggle {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 60px;
+	height: 30px;
+	border-radius: 30px;
+	background-color: #333;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	transition: all 0.5s ease-in;
+	cursor: pointer;
+	z-index: 1;
+}
+
+/* Making a dot switch inside the Toggle Button */
+#toggle::before {
+	content: "";
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #EEE;
+	position: absolute;
+	top: 50%;
+	left: 3px;
+	transform: translateY(-50%);
+	transition: all 0.5s ease-in;
+}
+
+/* Changing toggle button background when checked */
+#toggle:checked {
+	background: #a6a6a6;
+}
+
+/* Changing dot switch color and moving to the right side when checked */
+#toggle:checked::before {
+	background: #333;
+	left: 32px;
+}
+
+
+/**************************************************/
+
+/* https://dev.to/ritvikdubey27/dark-mode-in-css-part-2-nmi */
+/* https://dev.to/kunalukey/dark-mode-toggle-feature-css-only-180c */
+
+
 body {
 	-webkit-font-smoothing: antialiased;
 	color: #333332;
@@ -26,6 +274,10 @@ h1 {
 	color: rgba(0, 0, 0, .75);
 }
 
+.dark {
+	transition: all 0.4s ease-out;
+}
+
 .wrapper {
 	display: flex;
 	width: 100%;
@@ -37,7 +289,7 @@ h1 {
 
 .left {
 	background-color: rgba(0, 0, 0, .025);
-	box-shadow: -50px 0 50px 50px rgba(0,0,0,0.1);
+	box-shadow: -50px 0 50px 50px rgba(0, 0, 0, 0.1);
 	border-right: 1px solid rgba(0, 0, 0, .05);
 	height: 100%;
 	margin: 0;
@@ -326,7 +578,7 @@ ul.experience li:nth-child(2n) {
 	font-weight: normal;
 	width: 24px;
 	height: 24px;
-	background: white;
+	background: transparent;
 	border-radius: 50px;
 	border: 1px solid rgba(157, 157, 157, 0.722);
 	color: rgba(157, 157, 157, 0.722);
@@ -489,6 +741,7 @@ ul.experience li ul li::marker {
 	font-size: .75em;
 }
 
+
 @media (min-width: 320px) and (max-width: 1023px) {
 	.wrapper {
 		flex-direction: column;
@@ -499,7 +752,7 @@ ul.experience li ul li::marker {
 		width: 100%;
 		display: flex;
 		backdrop-filter: blur(40px) opacity(1) saturate(2);
-    	box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.1);
+		box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
 	}
 
 	.left .name-hero {

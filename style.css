@@ -208,6 +208,7 @@ input[type="checkbox"]:checked ~ #dark > .label-toggle {
 	font-family: 'Roboto';
     font-size: 12px;
     font-weight: 400;
+	z-index: 1;
 }
 
 #toggle {
@@ -746,13 +747,17 @@ ul.experience li ul li::marker {
 	.wrapper {
 		flex-direction: column;
 	}
-
 	.left {
 		height: auto;
 		width: 100%;
 		display: flex;
 		backdrop-filter: blur(40px) opacity(1) saturate(2);
 		box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	input[type="checkbox"]:checked ~ #dark > .left {
+		box-shadow: rgb(0, 0, 0, .5) -50px 0px 50px 50px;
+		border-right: none;
 	}
 
 	.left .name-hero {
@@ -837,7 +842,7 @@ ul.experience li ul li::marker {
 
 ::-webkit-scrollbar {
 	width: 10px;
-	background: rgb(240, 240, 240);
+	background: rgb(240, 240, 240, 0);
 }
 
 ::-webkit-scrollbar-track {

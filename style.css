@@ -63,7 +63,7 @@ input[type="checkbox"]:checked ~ #dark > .left .name-hero .name-text ul.socials 
 }
 
 input[type="checkbox"]:checked ~ #dark > .right {
-	background: #404247;
+	background: #333439;
 }
 
 input[type="checkbox"]:checked ~ #dark > .right .inner h1 {
@@ -747,7 +747,7 @@ ul.experience li ul li::marker {
 }
 
 
-@media (min-width: 320px) and (max-width: 1023px) {
+@media (min-width: 240px) and (max-width: 1123px) {
 	.wrapper {
 		flex-direction: column;
 	}
@@ -834,7 +834,7 @@ ul.experience li ul li::marker {
 	}
 }
 
-@media (min-width: 1024px) and (max-width: 1301px) {
+@media (min-width: 1124px) and (max-width: 1301px) {
 	.datos-it {
 		align-items: baseline;
 	}
